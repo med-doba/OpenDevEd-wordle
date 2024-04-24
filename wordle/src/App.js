@@ -2,6 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Arrays from './components/Arrays';
 import Menu from './components/Menu';
+import Alert from './components/Alert';
+import Alerts from './components/Alert';
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
 			{play === true && <div className='bg-[#B7B7B7] rounded-lg w-700 h-900 justify-center'>
 				{target && <Arrays target={target} />}
 			</div>}
+			{/* <Alerts></Alerts> */}
     	</div>
 	);
 }
